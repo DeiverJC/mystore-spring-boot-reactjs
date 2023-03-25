@@ -1,14 +1,9 @@
 "use client";
 
+import ProductsTable from "@/components/ProductsTable";
 import { useProducts } from "@/context/ProductsContext";
 
 export default function HomePage() {
   const { products } = useProducts();
-  return (
-    <div>
-      {products.map((product) => (
-        <div key={product.id}>{product.name}</div>
-      ))}
-    </div>
-  );
+  return <ProductsTable products={products} />;
 }
