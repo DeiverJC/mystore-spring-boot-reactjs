@@ -1,4 +1,4 @@
-import { ProductProvider } from "@/context/ProductsContext";
+import { ProductContextProvider } from "@/context/ProductsContext";
 
 export const metadata = {
   title: "MyStore App",
@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ProductProvider>{children}</ProductProvider>
+        <ProductContextProvider>{children}</ProductContextProvider>
       </body>
     </html>
   );
