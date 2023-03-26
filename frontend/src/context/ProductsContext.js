@@ -39,8 +39,10 @@ export const ProductContextProvider = ({ children }) => {
         data: product,
       });
       setProducts([...products, data]);
+      return data;
     } catch (error) {
       console.error(error);
+      return error;
     }
   };
 

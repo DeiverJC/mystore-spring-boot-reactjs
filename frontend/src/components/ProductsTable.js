@@ -70,7 +70,6 @@ export default function ProductsTable({ products }) {
         </Typography>
         <Button
           variant="contained"
-          color="secondary"
           size="small"
           startIcon={<Add />}
           onClick={() => router.push("/create")}
